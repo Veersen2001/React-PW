@@ -1,0 +1,15 @@
+What is a transpiler?
+
+Transpilers, or source-to-source compilers, are tools that read source code written in one programming language, and produce the equivalent code in another language which is in the same level.
+
+What is transpiling then?
+
+It is a process of taking one language & convert it in to another like you transpile your typescript into javascript and sass into css.
+
+What is the difference between compiling & transpiling?
+
+Compiling convert one language to another at lower abstraction level like java to byte code while transpiling convert one language to another at same abstraction level like typescript to javascript or sass to css.
+
+What is the reason for using babel?
+
+Well, all the latest javascript features are not supported in every browser yet. So someone needs to do the converting part right? So babel is here to transpile latest javascript features(ES6 features) which are not understandable to every browser to ES5 which is understandable to every browser.
