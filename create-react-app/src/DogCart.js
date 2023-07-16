@@ -1,15 +1,25 @@
 import Image from "./Image";
-export function DogCard(){
+import Name from "./name";
+export function DogCard(props){
+     let title = "hello this is dog image";
     return(
+       
         // return single parent or bind in parent element like div...etc.
         <>
+
+         <h2 style={{fontSize:'40px',color:'red'}}> 
+            {title}
+            {5+4}
+         </h2>
             {/* here we are using extra div for wrapping the content 
             so here we can use fragment<></> */}
-            <h3>
-                Bruno
+           <Name>
+             <h3>
+                {props.name}
             </h3>
-          <Image src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&w=600"></Image>
-          <Image src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&w=600"></Image>
+           </Name>
+          <Image src={props.image} ></Image>
+          
         </>
     );
 }

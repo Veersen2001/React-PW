@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import DogCard2 from './DogCart';
+
+import DogCard from './DogCart';
 import Image from './Image';
+import Counter from './hook';
 // default export,{Named Export}
 
 function App() {
   return (
     <div className="App">
-     <button id='btn'>
-      <span >Submit</span>
+    
       {/* we can change name of Default Export */}
-      <DogCard2></DogCard2> 
+      {/* <DogCard name='brouno' image="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&w=600"></DogCard>  */}
 
       {/* in named export we can not change name */}
-      <Image></Image>
+      {/* <Image></Image> */}
       
       
-     </button>
-     <DogCard2></DogCard2>
+  
+     {/* <DogCard name='tiger' image="https://images.pexels.com/photos/4587971/pexels-photo-4587971.jpeg?auto=compress&cs=tinysrgb&w=600"></DogCard> */}
+
+
+     <Counter></Counter>
     </div>
   );
 }
